@@ -130,3 +130,6 @@ dmypy.json
 
 wiki-news-300d-1M.vec
 .idea/
+report.odg
+report.pdf
+.~lock.report.odg#

@@ -29,7 +29,8 @@ STRINGS_TO_HANDLE = [
     "Tax Overhaul Is a Blow to Affordable Housing Efforts",
     "How Trump and Schumer Came Close to a Deal Over Cheeseburgers",
     "Statue of Liberty Will Reopen Despite Government Shutdown",
-    "Venezuela’s Most-Wanted Rebel Shared His Story, Just Before Death"
+    "Venezuela’s Most-Wanted Rebel Shared His Story, Just Before Death",
+    "North Korea reopens border hotline with South"
 ]
 
 
@@ -121,6 +122,7 @@ if __name__ == "__main__":
     i = 1
     with open("examples.txt", "w") as f:
         for string in input_strings:
+            string = string.lower()
             try:
                 res = handle(word_vectors, string)
                 f.write(f"{i}) {res}\n")
